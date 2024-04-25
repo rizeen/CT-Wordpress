@@ -1,0 +1,375 @@
+
+#nav {
+    text-align: center;
+}
+
+#nav li {
+    display: block;
+    position: relative;
+}
+
+#nav li a {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    line-height: 35px;
+    color: grey;
+}
+
+#nav ul li {
+    padding: 0;
+}
+
+#nav ul li a {
+    color: grey;
+}
+
+#nav ul li:hover {
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    color: #575757;
+    font-weight: 700;
+}
+
+#nav ul li ul {
+    top: 50%;
+}
+
+#nav ul {
+    position: absolute;
+    left: 0;
+    width: 120px;
+    height: auto;
+    display: none;
+    border: solid 1px black;
+    padding: 8px 0;
+    z-index: 99;
+    background-color: #ffffff;
+}
+
+#nav li:hover ul ul {
+    display: none;
+    border: solid 1px black;
+}
+
+/* hides sub-sublists */
+
+#nav li:hover ul {
+    display: block;
+    border: solid 1px black;
+}
+
+/* shows sublist on hover */
+
+#nav li li:hover ul {
+    border: solid 1px black;
+    display: block;
+    margin-left: 120px;
+    margin-top: -35px;
+}
+
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.top_banner_right div {
+    cursor: pointer;
+}
+
+.top_banner {
+    font-weight: 700;
+}
+
+.top_banner, .mymenu {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+section.page_navigation {
+    padding: 2rem 0;
+    color: grey;
+}
+
+section.page_navigation span {
+    color: #575757;
+    font-weight: 700;
+}
+
+.rizeen-form input[type="submit"] {
+    background-color: #ff6201;
+    color: white;
+    border: 0;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    width: auto;
+}
+
+.rizeen-form .inp2col {
+    p {
+        display: flex;
+        justify-content: space-between;
+    }
+    span {
+        display: block;
+        width: 48%;
+    }
+}
+
+.rizeen-form {
+    width: 80%;
+}
+
+.rizeen-form input, .rizeen-form textarea {
+    width: 100%;
+    border-radius: 0;
+    border: solid 1px lightgrey;
+    background-color: whitesmoke;
+    padding: 7px;
+}
+
+.rizeen-form .wpcf7 {
+    width: 100%;
+}
+.address_block .mb-0 {
+    margin-bottom: 0;
+}
+
+.address_block .mt-1 {
+    margin-top: 0.5rem;
+}
+
+.top_banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 14rem;
+    background-color: #ff6201;
+    font-size: 1.2rem;
+}
+
+.top_banner div {
+    display: flex;
+}
+
+.top_banner .txtwhite {
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.txtred {
+    color: #cc3903;
+}
+
+.txtwhite {
+    color: #fff3e1;
+}
+
+.mymenu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 1rem 14rem;
+}
+
+.mymenu_right ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    color: grey;
+    height: 100%;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.mymenu_right ul li:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #ff5f0b;
+    text-decoration-thickness: 3px;
+    cursor: pointer;
+}
+
+.mymenu_right ul#nav > li:hover > a {
+    color: black !important;
+    font-weight: 700;
+}
+
+.mymenu_right ul li {
+    padding: 7px;
+}
+
+.mymenu_right ul li:last-child {
+    padding-right: 0;
+}
+
+.mymenu_left {
+    font-size: 3rem;
+    color: #323232;
+    font-weight: 700;
+    display: flex;
+    img {
+        width: 200px;
+    }
+}
+
+.mymenu_left span {
+    color: #ff5f0b;
+}
+
+.content_div {
+    padding: 1rem 14rem;
+    font-size: 0.9rem;
+}
+
+.contact_details {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.contact_form h1 {
+    border-bottom: 5px solid #575757;
+    width: 80%;
+    padding-bottom: 0.3rem;
+}
+
+.contact_details h1 {
+    color: #ff5f0b;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-bottom: 5px solid #575757;
+    padding-bottom: 0.3rem;
+}
+
+section.contact h1 {
+    margin: 0;
+    color: #ff5f0b;
+    font-size: 1.5rem;
+}
+
+section.contact p {
+    color: grey;
+    margin: 0.3rem 0;
+}
+
+.contact_details section.contact_form {
+    width: 60%;
+}
+.contact_details section.contact_address {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+
+.contact_details section {
+    width: 100%;
+}           
+
+.social_icons {
+    padding-top: 6rem;
+}
+
+.social_icons i::before {
+    color: white;
+    margin-right: -0.3rem;
+}
+
+.social_icons span {
+    background-color: lightgrey;
+    width: 30px;
+    padding: 0.3rem 0.1rem;
+    margin: 0.2rem;
+}
+
+.social_icons span a {
+    text-decoration: none;
+}
+
+.social_icons span a:focus {
+    outline: none;
+}
+
+.social_icons span:hover {
+    background-color: #575757;
+    cursor: pointer;
+}
+
+.social_icons span:last-child {
+    padding-right: 0.4rem;
+}
+
+.social_icons span:first-child {
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .top_banner, .mymenu, .content_div {
+        padding: 0.3rem 5rem;
+    }
+  }
+  
+@media only screen and (max-width: 900px) {
+    .top_banner, .mymenu, .content_div {
+        padding: 0.3rem 2rem;
+    }
+    .content_div {
+        font-size: 0.8rem;
+    }
+    .mymenu_left {
+        font-size: 2.4rem;
+    }    
+    .top_banner {
+        font-size: 1rem;
+    }
+    .mymenu_right ul {
+        font-size: 0.8rem;
+    }
+  }
+  
+  @media only screen and (max-width: 620px) {
+    .mymenu_right ul {
+        flex-wrap: wrap;
+    }
+    .mymenu {
+        display: block;
+    }
+    .mymenu_left {
+        font-size: 2rem;
+    }
+    .mymenu_right ul li {
+        padding: 0 7px;
+    }
+    .top_banner {
+        flex-wrap: wrap;
+    }
+
+    .top_banner, .mymenu, .content_div {
+        padding: 0.3rem 1rem;
+        font-size: 0.9rem;
+    }
+    .mymenu {
+        font-size: 0.8rem;
+    }
+    .contact_details {
+        flex-direction: column;
+    }
+    .contact_details section.contact_form, 
+    .contact_details section.contact_address,
+    .contact_details form.rizeen-form {
+        width: 100%;
+    }
+    
+    .contact_form h1 {
+        width: 100%;
+    }
+    .social_icons {
+        padding-top: 1rem;
+    }
+    .rizeen-form {
+        width: 100%;
+    }
+  }
+  
